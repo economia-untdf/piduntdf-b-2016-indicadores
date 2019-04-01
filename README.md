@@ -1,10 +1,12 @@
-## Welcome to GitHub Pages
+## Indicadores Económicos de Tierra del Fuego
+### Resultados y difusión del proyecto PIDUNTDF-B 2016
 
-You can use the [editor on GitHub](https://github.com/economia-untdf/piduntdf-b-2016-indicadores/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+“LA DINÁMICA PRODUCTIVA DE TIERRA DEL FUEGO: UN ANÁLISIS DE LA INDUSTRIA LOCAL EN BASE A LA GENERACIÓN DE NUEVOS INDICADORES”,	2017/2018 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+El objetivo del sitio es la difusión de algunos de los resultados del proyecto y la comunicación de actividades futuras. 
 
-### Markdown
+
+### Acerca del Proyecto
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
