@@ -1,11 +1,10 @@
 <!--DOCTYPE html -->
+
 <html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
-<meta name="description" content="">
-<meta name="keywords" content="">
+    <!--pageMeta-->
 
     <!-- Loading Bootstrap -->
     <link href="css/skeleton.css" rel="stylesheet">
@@ -13,64 +12,102 @@
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
-      
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
-    
+    <!--headerIncludes-->
 
 </head>
 <body>
 
     <div id="page" class="page">
 
-    <div class="item header padding-bottom-0" id="header2">
+    <!-- /.wrapper -->
     
-    		<div class="wrapper">
-    	
-    			<div class="container">
-    		
-    				<nav role="navigation" class="navbar plain margin-top-20">
-    					<div class="navbar-header">
-    						<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
-    							<span class="sr-only">Toggle navigation</span>
-    						</button>
-    						<a href="#" class="navbar-brand">
-    						<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAAA5FBMVEX///+LHwNxcHX//v+GFQD4+Pj///1tbXGJHACRKQxsa3CEEwDt1s2KHQDAgGrp6emurrGJiYuHhounUTa0b11nZ2qZOBuysrOfnqH8+PX37+u5ur3jyL7Xsai4cFpnZmvd3d/hwbTs7/CACgDLiHjXopPCxcn05+HQj3+tXkZ8e4CzZ1LSpZTP09a/wcXbq5304dyVlZifRS3j2NeUMha/eWTHkHndtq7Xm4uiSS3er6PWsJ+mpajeyMPZppvGiXbY3OGqVz68f2/TtrDMmoXRxsabUDmtcFzDnpLJtK3IlIiygHEz41HYAAAI8ElEQVR4nO2aC1fiyBKAO6RpGpIQVwacBAQCSHiLDPjC0XFW7+71/v//c6u6OyEQFHbXQc/Z/o67h5CMfKlUV1c3EqLRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9F8EIwxwohJTPxheLSOSdLvfTgMvYjSZVsNmUlC/wPUXifh6HlEBH39PNwPmd7UDmu1AxlZz6+NfpZKQXScOA//2RUafIBaWmQVY7+2/FmaG9yi1ChupoF0tpzlIf1WmEIAh50ZhzO0l8XHSp5alHMD4HSWCLYpEzyYU4OOPkaaieyMwuuF9gh8DQgvdYwV1FiE4lrxT/DyIE8Nw3r5IGmilBnm72OFUwywsYljVU7lPzCF+Tk6G9bPzQF6QDB/Ib6Qv9xJ+UbB5vVQSOM9jmTeWPWPsGXmtDZaqPw10gFew6osReoTcimdDdo//AQDnz+9LBm03bb4DmEV7KEI9kOU77TkHdqZ4SQNtaJ2XpS1bbe4NT8nXjG+kFcOPyWajNg1O8QZz7NHD/2KsX0UrgW7XqfxEZ8fXBor2O3ioXd9dn5Vs33PD8Plw3CG+U1fTxe6cjZ4Xo3Ng2qTq05M7/r+NrCndu30oV6aO2Jm2ZUwfIqPS7VVh3Jn/nRq27Xg6vb+7LrXk/IQ+KvR5cPwZp53RMhfLYMGD3CiFHMpNrEHUSak+eNH03Vb+NMKw9UNnF0jCxSH6ebVPOdx86HmygNIMzauIhOk2+2OgR9Nwbdv37/XakFwe99b9Gdzh9JtiU7rgRzJh0RJbwNvQtwF8Pz83z//+A9MQTRlTZ185eZxWLwcwXgIfU+Ewvy1ieI2Fe7rtBS+fVpP5wnnHMsNPgjQL32xyWdbiZ2+WcVRv33jfx5pfOSMLHfPmlbfO8iA3AtRjJd79ChW8fNIC15SI3FLEYf1DGOJlcVH89JeT2KRLZva3AiE9aeRttZCejmqWFvyhc7tjxZNkpDmhjVkJPxffsvYpDdheqvkF4EtDyNvTQ0LK2nmo9fzH0Y60UUJ2fJrWnfAOD6swlFVXNbFE3dufGYMRydZEtQ3gQV2uFCvH16Wtlzf4gDyLtcuHD5Fv6ueiHS+Jguy+2fJSUUbS8iWpHYbjXLjKD48hqPfsvjqolEuFxp38ZkjODPIkqe2lYRaljMlttNWBxbPl8490WObxLtpx1cB7X7UM9eteNRhjZB7Ia3nl5kshashyUUJSUtnMpmE9G+FTEFKfy1nkGZ05qScyR2DNPQ7XJVZR7zMg3Se4weIXgims0dbdA7EK+ET5xHWMI40TYRSPhX4X2v8+6KyUcGxhKS13dymdE5JF9C5/DUpDWeejLwAf6N8NQ+FNJ+XSjfQxqFJZSo+SUrnI4y6etTeYyRtPXrSWQyB7Pj5frihTfN2ulLvinQcahVp3xZgrJxz+doT0tYXUPKXfSoHEOYBSvN5zY4IVassb0YUtVBugERbTs3u79f1dW06S3chu6TLF+vSiiLoOPEOrZQWLz3x6OU+qJCuJNpkVVAiaW5cbT56t/v9vLeoJEek7ELWrtslncuN16RF3WQg7ThpaRblhNXHSiWlVyvteKtPSVuXMveTtLrPV9dnxXlCmy4YblfuKV24GOSiw0Sk0TsVaUdIE9HC4abAlGyTlh/tV+Ru2JCtDzImE7v7/frsdpGPy6JDnzYS5E3pEzDNFMYb0khSmkWRlt9PTPNwDpeqKekIKU1nodgzSYJRN5vdb7e926BuRNHmxjIarrukC/B+dhAf75nToDrD/Bilpc2oZxPSfFtZkDQn41rvOgj6XA1YGM2JB/W2dPmIVBtwuiukG/tJM4IFBOtveiCqBPbn3HhzJ701gWB37u2gpJaT1ixUrfg+0qtQH+0nDfEYUlxfR9LzZRDhM5kNPlxOi+rbg61ku5Nmrde5CpczmSPWo0/MvSJdgPcnMPkUJmT/9MDKAtJDElUJbkCh4fAT5wNIWyX/jVYZh2N1/O2+c237qm2ldbafNESaZPEdlN1TGmL5sC6NrYSzSmKG0tgqv9HcYz1vVrtu0Ovch/5lHrWhPpKod9klTbowsTeqe+c0YWLf2YqledRhtbkQBSEbJ5+dCxJ3Um1OzzqdgIVF6LY5XUZjYrc0hjo3aEW9xy5pJs6tpPn8/jTCVxUkoA+7jJFstzp2r3qQI8T+YlgUmlh1qzulyRg6p8bJvumRGoiVjd0uiNVV39vWcK6BxRESe+La153OvU9qfd6GPmxfaVOEOrtnpIkqeQ/EjOu0qU6gMZaMaXpW2aaNG5vV6ti/7XR6gUmCUnumar6Sjn5FNOzEjKhuZgwFpFytbkZ6S+8hzHBycazTN2bEv4DbrXZbGGzIEW8570sBt5DqpzekGbnAUF8U9pKWczo3au8jDQ1UddIMIdidW5/4T3JGwkVAIV5UtcRcYm5IN3Oytd4v0tgwUaH6HtKY2NVxC2aaTq/GiM+kJkgfR1c0M9DWycXKKj2iVcw+0qrOWXWRKP9cGuMHid1thfedXucslOPDvCgklicwV0P6RqLlSBruJbev9CXWZl4jW/rpvwtU7GozCzPNma8GXzeHNnKrYCwC6qakVah3Snu+Xce1klVfLbfe4ztCSGxIkel5VIhg8oDoFgYn3fHkay5R/9ak3UxhlzSv1IelmdhxkT3ZO0qLxJ64iW9j3AFY5xqQzNjxNy6yW6TJXWOXtMEt8UU+p1bJlsn4ftKwMqhW3eQ6x70oNHK5AvwUGpm7yOtro1BebdW4mQacHcTSiza16Erakd88UGpZfPbiqdWRdwNX5d/p29hmk6x/7zW+Ox4MMoPB8VEzfg+3xbpk7RC3xRTLYX1Yt6M/pwlXe2Sjmpq24VT2Eq4qeqkdgPfCbLlNN7v7OiWUXEGnlNTZ+P3PscUMi2bZSMRW6oTaLlXvEtHUkU+zL86S+xWm2Ndlyi86w5j6m8eP281P/T2duXqTrf6AgLGNjQy1vfjXPulX3iLb+jLJ39zE/xzZpNFoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUbzL+f/fmroZuYZ+BwAAAAASUVORK5CYII=" style="height: 45px; outline: none;"> 
-    						
-    						 
-    						</a>
-    						</div>
-    								
-    					<div id="navbar-collapse-02" class="collapse navbar-collapse">
-    						<ul class="nav navbar-nav navbar-right">			      
-    							<li class="active propClone"><a href="#" style="outline: none;">Inicio</a></li>
-    							<li class="propClone"><a href="https://economia-untdf.github.io/piduntdf-b-2016-indicadores/Proyecto.html" style="color: rgb(127, 140, 141); font-weight: 400; text-transform: uppercase;">DETALLES DEL PROYECTO</a></li>
-    							<li class="propClone"><a href="#" style="outline: none;">Contacto</a></li>
-    						</ul> 		      
-    					</div><!-- /.navbar-collapse -->
-    				</nav>
-    		
-    			</div><!-- /.container -->
-    	
-    		</div><!-- /.wrpaper -->
+    	<!-- /.item --><!-- /.container --><!-- /.item --><div class="footerWrapper" id="footer2">
     
-    		<header class="wrapper grey">
-    	
-    			<div class="container">
-    		    			
-    				<div class="row banner2">
-    			
-    					<div class="col-md-7">
-    					
-                            <div class="editContent" style="color: rgb(52, 73, 94); font-size: 18px; background-color: rgba(0, 0, 0, 0); font-family: Lato, Helvetica, Arial, sans-serif;">
-        						
-        						<p>
-Portal de Difusión de Investigaciones
+    	<div class="item footer bottom-menu">
+    	    	
+    <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px Avenir; color: #313131}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px Avenir; color: #313131; -webkit-text-stroke: #000000}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px Avenir; color: #313131; min-height: 23.0px}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Avenir Next'; color: #313131}
+p.p5 {margin: 0.0px 0.0px 0.0px 28.0px; text-indent: -28.0px; font: 17.0px Avenir; color: #313131; -webkit-text-stroke: #000000}
+p.p6 {margin: 0.0px 0.0px 0.0px 28.0px; text-indent: -28.0px; font: 17.0px Avenir; color: #313131; -webkit-text-stroke: #000000; min-height: 23.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 28.0px; text-indent: -28.0px; font: 17.0px Avenir; color: #313131; -webkit-text-stroke: #b00004}
+p.p8 {margin: 0.0px 0.0px 0.0px 28.0px; text-indent: -28.0px; font: 17.0px Avenir; color: #313131}
+p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px Avenir; color: #313131; -webkit-text-stroke: #1a1a1a}
+span.s1 {font-kerning: none}
+span.s2 {-webkit-text-stroke: 0px #000000}
+span.s3 {font-kerning: none; -webkit-text-stroke: 0px #000000}
+</style>
+<style>
+*{
+    
+    margin:0px;
+    
+}
+
+.container{
+    width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.header{
+    background-color:green;
+    height:40px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:white;
+    font-family: 'Avenir-Book'; font-weight: normal; font-style: normal; font-size: 17.00pt;
+/*    margin-bottom:30px;*/
+    padding-top:10px;
+    margin-bottom:30px;
+
+}
 
 
+img{
+    max-width:700px;
+}
 
+.editor_table{
+    width:100%;
+    border : 1px;
+    border-collapse: collapse;
+    font-family: "Avenir";
+}
+.editor_table, th, td {
+    border: 1px solid #bbb;
+    padding: 5px;
+    text-align: left;
+}
 
+blockquote.strike_quote, blockquote.cite, blockquote[type="cite"] {
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 7px !important;
+    border-left: 2px solid #0080ff !important;
+    color: #0080ff !important;
+}
+
+blockquote.strike_code_block {
+    background-color:lightgray;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 7px !important;
+    color: #0080ff !important;
+}
+
+a { color: rgba(255,0,0,1.0);}</style></head>
+<p class="p1"> </p>
+<p class="p1"> </p>
+<p class="p2"><span class="s1"><b>FORMULARIO GUÍA PARA INFORME FINAL DE PROYECTOS DE INVESTIGACIÓN PIDUNTDF</b></span></p>
+<p class="p1"> </p>
+<p class="p1">                        <span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="s1"><b>                                                                            </b></span></p>
 <p class="p1"> </p>
 <p class="p2"><span class="s1"><b>1.-IDENTIFICACION DEL PROYECTO                                                     </b></span></p>
 <p class="p2"><span class="s1"></span></p>
@@ -243,72 +280,10 @@ Portal de Difusión de Investigaciones
 <p class="p5"><span class="s1"> </span></p>
 <p class="p5"><span class="s1"> </span></p>
 <p class="p5"><span class="s1"> </span></p>
-
-
-
-                                </p>
-                            </div>
-    					
-    						<a href="#content_section10" class="btn btn-primary btn-embossed btn-wide" style="border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; font-size: 15px; background-color: rgb(59, 190, 165); outline: none;"><span class="fa fa-arrow-circle-o-right" style="outline: none;">
-    						
-    						</span> Continuar</a>
-    				
-    					</div>
-    			
-    				</div><!-- /.row -->
-    		
-    			</div><!-- /.container -->
+</div></body>    		    	
+    	</div><!-- /.item -->
     	
-    		</header></div><!-- /.wrapper -->
-    
-    	<!-- /.item --><div class="container" id="divider1">
-    
-    		<div class="col-md-12">
-    
-    			<hr class="dashed">
-    	
-    		</div><!-- /.col -->
-    	
-    	</div><!-- /.container --><div class="item content" id="content_section10">
-    		
-    		<div class="container">
-    		
-    			<div class="row">
-    			
-    				<div class="col-md-6">
-    					
-    					<div class="editContent">
-    					<h3>
-    					
-Acerca del Proyecto de Investigación
-    					
-    					</h3>
-    					
-    					<p>
-    					
-    			<b> Objetivos específicos </b>
-1.- Identificar los avances de la literatura en torno a temáticas como la industria infante, el desarrollo industrial, las cadenas globales de valor y las dinámicas de cambio tecnológico, con particular atención en su medición y los principales debates.
-2.- Elaborar indicadores clave para la comprensión del sistema productivo de la Provincia de Tierra del Fuego desde fuentes secundarias y  primarias.
-3.- Analizar las relaciones entre indicadores económicos provinciales,  nacionales y referentes al marco normativo de la promoción industrial fueguina, desde un punto de vista histórico, conceptual y empírico.
-4.- Elaborar recomendaciones de política y propuestas de intervención para promover la sustentabilidad y el desarrollo del entramado productivo local.
-
-    					
-    					</p>
-    					</div>
-    					
-
-					 
-							</tbody>
-						</table>  	
-    					</div><!-- /.tableWrapper -->				
-    				
-    				</div><!-- ./col-md-8 -->
-    			
-    			</div><!-- /.row -->
-    		
-    		</div><!-- /.container -->
-    	
-    	</div><!-- /.item --></div><!-- /#page -->
+    	</div><!-- /.footerWrapper --></div><!-- /#page -->
 
 	<!-- Load JS here for greater good =============================-->
     <script src="js/build/build.min.js"></script>
